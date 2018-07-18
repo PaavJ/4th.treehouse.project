@@ -1,0 +1,26 @@
+
+
+.search-bar {
+  padding: 10px;
+  width: 500px;
+  margin-left: 710px;
+  margin-top: 160px;
+}
+
+.hay,
+.water,
+.ice,
+.mountain,
+.strange,
+.congo,
+.forest,
+.desert,
+.canyon,
+.tunnel,
+.cave,
+.ocean {
+  display: inline-flex;
+  margin: 80px;
+  padding-left: 75px;
+  padding-top: 20px;
+}
