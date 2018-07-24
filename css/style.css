@@ -1,10 +1,36 @@
+* {
+	box-sizing: border-box;
+}
 
 
-.search-bar {
-  padding: 10px;
-  width: 500px;
-  margin-left: 710px;
-  margin-top: 160px;
+
+
+body {
+	margin: 0;
+	min-height: 100vh;
+}
+
+input {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  outline: 0;
+  padding: 15px;
+  width: 50%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+
+form {
+	text-align: center;
+	padding: 20px 0;
+	background-color: #232931;
+	width: 100%;
+	margin: 0 0 30px 0 ;
 }
 
 .hay,
@@ -23,4 +49,36 @@
   margin: 80px;
   padding-left: 75px;
   padding-top: 20px;
+}
+
+#myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 12px;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#myUL {
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee; 
 }
