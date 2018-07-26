@@ -4,7 +4,7 @@
       'wrapAround': true,
       'showImageNumberLabel': true,
       'alwaysShowNavOnTouchDevices': true,
-      'maxWidth': 400,
+      'maxWidth': 800,
 
 
     });
