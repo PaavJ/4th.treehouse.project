@@ -28,7 +28,7 @@ function myFunction() {
     var myInput, filter, img, alt, a;
     input = document.getElementById('myInput');
     filter = input.value.toUpperCase();
-    ul = document.getElementById("alt");
+    ul = document.getElementById("myUL");
     li = ul.getElementsByTagName('a');
 
     for (i = 0; i < a.length; i++) {
@@ -49,7 +49,7 @@ function myFunction() {
     ul = document.getElementById("myUL");
     li = ul.getElementsByTagName('li');
 
-    
+
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
