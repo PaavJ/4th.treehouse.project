@@ -46,15 +46,16 @@ form {
 .cave,
 .ocean {
   display: inline-flex;
-  margin: 80px;
-  padding-left: 75px;
+  margin: 0 auto;
+	padding: 50px;
+	margin-left: 50px;
   padding-top: 20px;
 }
 
 #myInput {
     background-image: url('/css/searchicon.png');
     background-position: 10px 12px;
-    width: 100%;
+    width: 50%;
     font-size: 16px;
     padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
@@ -80,5 +81,5 @@ form {
 }
 
 #myUL li a:hover:not(.header) {
-    background-color: #eee; 
+    background-color: #eee;
 }
