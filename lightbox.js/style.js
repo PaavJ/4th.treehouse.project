@@ -22,25 +22,6 @@
 
 
 
-
-
-function myFunction() {
-    var myInput, filter, img, alt, a;
-    input = document.getElementById('myInput');
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName('a');
-
-    for (i = 0; i < a.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            a[i].style.display = "";
-        } else {
-            a[i].style.display = "none";
-        }
-    }
-}
-
 function myFunction() {
 
     var input, filter, ul, li, a, i;
@@ -48,14 +29,15 @@ function myFunction() {
     filter = input.value.toUpperCase();
     ul = document.getElementById("myUL");
     li = ul.getElementsByTagName('li');
+    var = document.querySelectorAll('a');
 
-
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+    for (i = 0; i < var.length; i++) {
+        a = anchor[i].getElementsByTagName("a")[0];
+        var = anchor[i].getAttribute('data-title'); {
+        if (.title().toUpperCase().indexOf(filter) > -1) {
+            anchor[i].style.display = "";
         } else {
-            li[i].style.display = "none";
+            anchor[i].style.display = "none";
         }
     }
 }
