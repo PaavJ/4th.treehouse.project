@@ -22,22 +22,28 @@
 
 
 
-function myFunction() {
+    $('#search-bar').keyup(function(){
+        var valThis = $(this).val().toLowerCase();
+        var noresult = 0;
+        if(valThis == ""){
 
-    var input, filter, ul, li, a, i;
-    input = document.getElementById('myInput');
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName('li');
-    var = document.querySelectorAll('a');
-
-    for (i = 0; i < var.length; i++) {
-        a = anchor[i].getElementsByTagName("a")[0];
-        var = anchor[i].getAttribute('data-title'); {
-        if (.title().toUpperCase().indexOf(filter) > -1) {
-            anchor[i].style.display = "";
+            $('.galleryList > li').show();
+            noresult = 1;
+            $('.no-results-found').remove();
         } else {
-            anchor[i].style.display = "none";
+            $('.galleryList > li').each(function(){
+                var text = $(this).text().toLowerCase();
+                var match = text.indexOf(valThis);
+                if (match >= 0) {
+                    $(this).show();
+                    noresult = 1;
+                    $('.no-results-found').remove();
+                } else {
+                    $(this).hide();
+                }
+            });
+       };
+        if (noresult == 0) {
+            $(".galleryList").append('<li class="no-results-found">No results found.</li>');
         }
-    }
-}
+    });
