@@ -53,7 +53,6 @@ form {
 }
 
 #myInput {
-    background-image: url('/css/searchicon.png');
     background-position: 10px 12px;
     width: 50%;
     font-size: 16px;
