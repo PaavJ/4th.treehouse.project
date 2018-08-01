@@ -24,19 +24,19 @@
 
 function myFunction() {
 
-    var input, filter, ul, li, a, i;
+    var input, filter, a;
     input = document.getElementById('myInput');
     filter = input.value.toUpperCase();
     var anchor = document.querySelectorAll('a');
 
     for (i = 0; i < anchor.length; i++) {
-        a = anchor[i].getElementsByTagName("a")[0];
-        var data = anchor[i].getAttribute('data-title');
-        if {
-          (title.toUpperCase().indexOf(filter) > -1)
+        a = anchor[i];
+        var data = a.getAttribute('data-title') .toUpperCase().indexOf(filter);
+
+        if (.toUpperCase().indexOf(filter) > -1){
+
             anchor[i].style.display = "";
-          }
-         else {
+
+         } else {
             anchor[i].style.display = "none";
         }
-    
