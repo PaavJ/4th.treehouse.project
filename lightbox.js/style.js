@@ -27,16 +27,19 @@ function myFunction() {
     var input, filter, a;
     input = document.getElementById('myInput');
     filter = input.value.toUpperCase();
-    var anchor = document.querySelectorAll('a');
+    var anchor = document.querySelectorAll('.gallery a');
 
     for (i = 0; i < anchor.length; i++) {
         a = anchor[i];
-        var data = a.getAttribute('data-title') .toUpperCase().indexOf(filter);
 
-        if (.toUpperCase().indexOf(filter) > -1){
+        var data = a.getAttribute('data-title');
 
-            anchor[i].style.display = "";
+        if (data.toUpperCase().indexOf(filter) > -1) {
+
+            anchor[i].parentElement.style.display = "";
 
          } else {
-            anchor[i].style.display = "none";
+            anchor[i].parentElement.style.display = "none";
         }
+      }
+    }

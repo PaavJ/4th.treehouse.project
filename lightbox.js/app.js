@@ -27,7 +27,7 @@ $("#imageGallery a").click(function(event){
 
   getCurrentImage(this);
 
-  
+
   $overlay.show();
 });
 
